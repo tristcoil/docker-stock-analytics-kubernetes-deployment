@@ -16,8 +16,7 @@ pipeline {
                                --nodes-max 4 \
                                --ssh-access \
                                --with-oidc \
-                               --managed
-                       '
+                               --managed'
                    }
              }
 
@@ -31,8 +30,7 @@ pipeline {
                     sh 'eksctl utils associate-iam-oidc-provider \
                                --region us-east-2 \
                                --cluster analytics-cluster \
-                               --approve
-                       '                   
+                               --approve'                   
                    }
              }
 
@@ -46,29 +44,24 @@ pipeline {
                                --name=aws-load-balancer-controller \
                                --attach-policy-arn=arn:aws:iam::667684686916:policy/AWSLoadBalancerControllerIAMPolicy \
                                --override-existing-serviceaccounts \
-                               --approve
-                       '                   
+                               --approve'                   
                    }
              }
 
          stage('LB controller installation') {
              steps {
                  
-                    sh 'kubectl apply -k "github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master"
-                       '       
+                    sh 'kubectl apply -k "github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master"'       
 
-                   sh 'helm repo add eks https://aws.github.io/eks-charts
-                       '       
+                   sh 'helm repo add eks https://aws.github.io/eks-charts'       
 
                    sh 'helm upgrade -i aws-load-balancer-controller eks/aws-load-balancer-controller \
                             --set clusterName=analytics-cluster \
                             --set serviceAccount.create=false \
                             --set serviceAccount.name=aws-load-balancer-controller \
-                            -n kube-system
-                       '       
+                            -n kube-system'       
 
-                   sh 'kubectl get deployment -n kube-system aws-load-balancer-controller
-                       '       
+                   sh 'kubectl get deployment -n kube-system aws-load-balancer-controller'       
 
 
 
