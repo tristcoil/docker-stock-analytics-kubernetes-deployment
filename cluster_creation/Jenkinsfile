@@ -49,6 +49,7 @@ pipeline {
                           eksctl create iamserviceaccount \
                                --cluster=analytics-cluster \
                                --namespace=kube-system \
+                               --region us-east-2 \
                                --name=aws-load-balancer-controller \
                                --attach-policy-arn=arn:aws:iam::667684686916:policy/AWSLoadBalancerControllerIAMPolicy \
                                --override-existing-serviceaccounts \
