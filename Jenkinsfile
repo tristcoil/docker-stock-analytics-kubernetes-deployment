@@ -10,7 +10,7 @@ pipeline {
                                --version 1.18 \
                                --region us-east-2 \
                                --nodegroup-name linux-nodes \
-                               --node-type t2.small
+                               --node-type t2.small \
                                --nodes 3 \
                                --nodes-min 1 \
                                --nodes-max 4 \
