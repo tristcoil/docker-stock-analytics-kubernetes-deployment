@@ -19,7 +19,7 @@ pipeline {
                                --nodes-min 1 \
                                --nodes-max 4 \
                                --with-oidc \
-                               --managed
+                               --managed \
                        '''
                        }
                    }
