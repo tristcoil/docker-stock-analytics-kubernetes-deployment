@@ -5,7 +5,11 @@ pipeline {
 
          stage('Cluster creation') {
              steps {
-                    sh 'eksctl create cluster \
+
+                   withAWS(credentials:'aws-static') {
+                       
+                    sh '''
+                          eksctl create cluster \
                                --name analytics-cluster \
                                --version 1.18 \
                                --region us-east-2 \
@@ -15,7 +19,9 @@ pipeline {
                                --nodes-min 1 \
                                --nodes-max 4 \
                                --with-oidc \
-                               --managed'
+                               --managed
+                       '''
+                       }
                    }
              }
 
