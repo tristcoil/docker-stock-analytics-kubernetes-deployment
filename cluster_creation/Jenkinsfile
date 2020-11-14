@@ -2,7 +2,7 @@ pipeline {
      agent any
      stages {
 
-/*
+
          stage('Cluster creation') {
              steps {
                     withAWS(credentials:'aws-static') {
@@ -40,7 +40,7 @@ pipeline {
                }     
               }
              }
-*/
+
 
          stage('LB Role and service account creation') {
              steps {
