@@ -84,7 +84,11 @@ pipeline {
 
 */
 
-
+         stage('Clean-up docker images') {
+             steps {  
+                    sh 'sudo docker system prune -a'
+              }
+             }
 
 
 
