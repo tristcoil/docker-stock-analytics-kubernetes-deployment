@@ -48,7 +48,8 @@ https://askubuntu.com/questions/1139046/jenkins-error-incorrect-java-version-for
 https://stackoverflow.com/questions/19457867/problems-installing-latest-version-of-jenkins
 actual jenkins config fix:
 https://askubuntu.com/questions/1139046/jenkins-error-incorrect-java-version-for-java11-after-removing-java11-and-ins
-
+https://www.edureka.co/community/39390/how-to-give-jenkins-super-user-permission
+https://stackoverflow.com/questions/11880070/how-to-run-a-script-as-root-in-jenkins
 
 #### additional notes:
 my docker image that will go to Kubernetes cluster:

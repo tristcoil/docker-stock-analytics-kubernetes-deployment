@@ -2,6 +2,24 @@ pipeline {
      agent any
      stages {
 
+         stage('Linting') {
+             steps {  
+
+
+                    sh 'python -m venv venv'
+                    sh '. venv/bin/activate'
+                    sh 'sudo make install'
+                       
+
+                    sh 'sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64'
+                    sh 'chmod +x /bin/hadolint'
+                    sh 'make lint'
+
+              }
+             }
+
+
+
 
          stage('Build Docker Image') {
              steps {  
