@@ -51,6 +51,10 @@ https://askubuntu.com/questions/1139046/jenkins-error-incorrect-java-version-for
 https://www.edureka.co/community/39390/how-to-give-jenkins-super-user-permission
 https://stackoverflow.com/questions/11880070/how-to-run-a-script-as-root-in-jenkins
 
+#### increasing swap on mt jenkins box
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04
+
+
 #### additional notes:
 my docker image that will go to Kubernetes cluster:
 coil/stock_analytics
