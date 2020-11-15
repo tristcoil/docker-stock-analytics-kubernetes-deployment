@@ -43,6 +43,12 @@ https://aroussi.com/post/python-yahoo-finance
 https://stackoverflow.com/questions/32490629/getting-todays-date-in-yyyy-mm-dd-in-python
 https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
+#### troubleshooting jenkins:
+https://askubuntu.com/questions/1139046/jenkins-error-incorrect-java-version-for-java11-after-removing-java11-and-ins
+https://stackoverflow.com/questions/19457867/problems-installing-latest-version-of-jenkins
+actual jenkins config fix:
+https://askubuntu.com/questions/1139046/jenkins-error-incorrect-java-version-for-java11-after-removing-java11-and-ins
+
 
 #### additional notes:
 my docker image that will go to Kubernetes cluster:
