@@ -54,6 +54,10 @@ https://stackoverflow.com/questions/11880070/how-to-run-a-script-as-root-in-jenk
 #### increasing swap on my jenkins box
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04
 
+#### creating config for app deployment on kubernetes:
+https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/examples/2048/2048_full.yaml
+
+
 
 #### some docker commands:
 https://docs.docker.com/engine/reference/commandline/system_prune/
