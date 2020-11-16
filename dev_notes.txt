@@ -59,6 +59,7 @@ https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/m
 
 #### pushing to dockerhub with Jenkins:
 https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers
+https://support.cloudbees.com/hc/en-us/articles/203802500-Injecting-Secrets-into-Jenkins-Build-Jobs
 
 #### some docker commands:
 https://docs.docker.com/engine/reference/commandline/system_prune/

@@ -28,7 +28,7 @@ pipeline {
 
                   withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                   //accessible via $user and $pass calls
-                  sh 'sudo ./build_docker_jenkins.sh $user $pass'
+                  sh 'sudo ./upload_docker_jenkins.sh $user $pass'
                }
               }
              }
