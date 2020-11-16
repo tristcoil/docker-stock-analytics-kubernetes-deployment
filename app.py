@@ -40,22 +40,22 @@ def home():
 @app.route("/stock_analytics", methods=['POST'])
 def stock_analytics():
     """Performs an sklearn prediction
-        
-        {  
+
+        {
          "Ticker":"AAPL"
         }
-        
+
         result looks like:
         { "ticker": "price" }
-        
+
         """
 
     today = str(date.today())
     LOG.info(f"Today: {today}")
-    
+
     # Logging the input payload
     json_payload = request.json
-    
+
     # the incoming request is basically a dictionary
     # so is accessible via key
     LOG.info(f"JSON payload: \n{json_payload}")
@@ -70,11 +70,4 @@ def stock_analytics():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80, debug=True) # specify port=80
-
-
-
-
-
-
-
+    app.run(host='0.0.0.0', port=80, debug=True)

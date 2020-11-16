@@ -35,6 +35,18 @@ pipeline {
               }
              }
 
+         stage('Delete previous deployment') {
+             steps {
+                    withAWS(credentials:'aws-kubernetes') {
+                        sh 'kubectl delete -f deployment-config.yaml'
+                        sh 'kubectl get all -n stock-app'
+               }
+              }
+             }
+
+
+
+
          stage('Deploy app to k8s and check namespace') {
              steps {
                     withAWS(credentials:'aws-kubernetes') {
