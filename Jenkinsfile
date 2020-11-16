@@ -27,10 +27,10 @@ pipeline {
          stage('Upload docker image to DockerHub') {
              steps {
 
-                  withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
-                  //accessible via $user and $pass calls
-                  sh "echo $user"
-                  sh 'sudo ./upload_docker_jenkins.sh $user $pass'
+                  withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PASS')])
+                {
+                  sh 'echo $USER'
+                  sh 'sudo ./upload_docker_jenkins.sh $USER $PASS'
                }
               }
              }
