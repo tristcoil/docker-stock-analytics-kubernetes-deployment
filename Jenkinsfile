@@ -19,7 +19,8 @@ pipeline {
 
          stage('Build Docker Image') {
              steps {
-                    sh 'sudo ./build_docker.sh'
+                    sh 'sudo ./build_docker.sh; sleep 10'
+
               }
              }
 
@@ -28,7 +29,7 @@ pipeline {
 
                   withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                   //accessible via $user and $pass calls
-                  sh 'echo $user'
+                  sh "echo $user"
                   sh 'sudo ./upload_docker_jenkins.sh $user $pass'
                }
               }
