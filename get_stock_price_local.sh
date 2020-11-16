@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-PORT=8000
+PORT=80
 echo "Port: $PORT"
 
 # POST method predict
-curl -d '{  
+curl -d '{
    "Ticker":"AAPL"
 }'\
      -H "Content-Type: application/json" \

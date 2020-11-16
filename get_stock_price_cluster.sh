@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-ADDRESS='http://k8s-stockapp-ingresss-e7ce4b8d1f-1127028196.us-east-2.elb.amazonaws.com'
+ADDRESS='k8s-stockapp-ingresss-e7ce4b8d1f-780911389.us-east-2.elb.amazonaws.com'
 PORT=80
 ENDPOINT='stock_analytics'
 echo "Port: $PORT"
