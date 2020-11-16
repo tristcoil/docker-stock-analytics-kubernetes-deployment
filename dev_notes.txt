@@ -57,7 +57,8 @@ https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu
 #### creating config for app deployment on kubernetes:
 https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/examples/2048/2048_full.yaml
 
-
+#### pushing to dockerhub with Jenkins:
+https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers
 
 #### some docker commands:
 https://docs.docker.com/engine/reference/commandline/system_prune/
@@ -65,4 +66,3 @@ https://docs.docker.com/engine/reference/commandline/system_prune/
 #### additional notes:
 my docker image that will go to Kubernetes cluster:
 coil/stock_analytics
-

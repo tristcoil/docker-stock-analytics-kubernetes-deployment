@@ -23,6 +23,15 @@ pipeline {
               }
              }
 
+         stage('Upload docker image to DockerHub') {
+             steps {
+
+                  withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
+                  //accessible via $user and $pass calls
+                  sh 'sudo ./build_docker_jenkins.sh $user $pass'
+               }
+              }
+             }
 
 
          stage('Associate with cluster') {
