@@ -9,7 +9,7 @@ PASS=$2
 # Step 1:
 # Create dockerpath
 dockerpath='coil/stock_analytics'
-version='v1'
+version='v2'
 
 # Step 2:
 # Authenticate & tag
@@ -27,5 +27,3 @@ docker commit stock_analytics ${dockerpath}:${version}
 # Push image to a docker repository
 #docker push ${dockerpath}:latest
 docker push ${dockerpath}:${version}
-
-

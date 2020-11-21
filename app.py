@@ -65,6 +65,8 @@ def stock_analytics():
 
     LOG.info(f"Price: \n{price}")
 
+    LOG.info("This is updated version of the app.")
+
     return jsonify({ticker: price})
 
 
