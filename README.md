@@ -75,6 +75,7 @@ Jenkins server has to have these installed
 - https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
 - https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-interactive/
 - https://medium.com/platformer-blog/enable-rolling-updates-in-kubernetes-with-zero-downtime-31d7ec388c81
+- https://www.bluematador.com/blog/kubernetes-deployments-rolling-update-configuration
 
 
 #### knowledge base:
@@ -131,6 +132,3 @@ actual jenkins config fix:
 #### additional notes:
 docker image that will go to Kubernetes cluster:
 coil/stock_analytics
-
-
-
