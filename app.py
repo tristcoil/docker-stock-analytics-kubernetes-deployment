@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
 
-#import pandas as pd
+import pandas as pd
 
 import yfinance as yf
 from pandas_datareader import data as pdr
