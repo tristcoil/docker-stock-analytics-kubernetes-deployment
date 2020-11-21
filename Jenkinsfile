@@ -63,7 +63,7 @@ pipeline {
                         sh 'kubectl apply -f deployment-config.yaml'
                         sh 'sleep 60'
                         sh 'kubectl get all -n stock-app'
-                        sh 'kubectl describe pods'
+                        sh 'kubectl describe pods -n stock-app'
                }
               }
              }
