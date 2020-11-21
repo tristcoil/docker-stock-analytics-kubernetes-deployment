@@ -76,6 +76,7 @@ Jenkins server has to have these installed
 - https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-interactive/
 - https://medium.com/platformer-blog/enable-rolling-updates-in-kubernetes-with-zero-downtime-31d7ec388c81
 - https://www.bluematador.com/blog/kubernetes-deployments-rolling-update-configuration
+- https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
 
 
 #### knowledge base:
