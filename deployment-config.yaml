@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/name: stock-app
     spec:
       containers:
-      - image: coil/stock_analytics
+      - image: coil/stock_analytics:v1
         imagePullPolicy: Always
         name: stock-app
         ports:
